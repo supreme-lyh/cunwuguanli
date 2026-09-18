@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-<meta name="generator" content="village-affairs build 2026-09-18 12:46">
+<meta name="generator" content="village-affairs build 2026-09-18 13:47">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="theme-color" content="#0D9488">
@@ -245,6 +245,8 @@ table.tbl tbody tr:hover{background:var(--primary-l2)}
 table.tbl tbody tr:last-child td{border-bottom:none}
 table.tbl td:first-child,table.tbl th:first-child{min-width:84px}
 table.tbl td.num{font-variant-numeric:tabular-nums;text-align:right}
+/* 数字列表头必须与数字单元格同侧对齐，否则表头靠左、数字靠右会错开 */
+table.tbl th.num{text-align:right;font-variant-numeric:tabular-nums}
 table.tbl td.act{white-space:nowrap;text-align:right}
 /* 对账面板：限高纵向滚动，避免长表撑破页面 */
 .panel-tbl{max-height:340px;overflow:auto}
